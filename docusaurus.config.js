@@ -36,9 +36,6 @@ module.exports = {
       {
         blog: {
           showReadingTime: true,
-          // TODO
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
           feedOptions: {
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} kazuki229. Built with Docusaurus.`,
