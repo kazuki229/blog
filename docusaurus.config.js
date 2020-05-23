@@ -2,7 +2,7 @@ module.exports = {
   title: 'kazuki229\'s blog',
   url: 'https://kazuki229.github.io',
   baseUrl: '/',
-  favicon: 'img/logo.png',
+  favicon: '/img/logo.png',
   organizationName: 'kazuki229',
   projectName: 'blog',
   themeConfig: {
@@ -10,7 +10,7 @@ module.exports = {
       title: 'kazuki229',
       logo: {
         alt: 'kazuki229 logo',
-        src: 'img/logo.png',
+        src: '/img/logo.png',
       },
       links: [
         {
