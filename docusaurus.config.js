@@ -5,6 +5,7 @@ module.exports = {
   favicon: '/img/logo.png',
   organizationName: 'kazuki229',
   projectName: 'blog',
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     navbar: {
       title: 'kazuki229',
@@ -24,6 +25,10 @@ module.exports = {
           position: 'right',
         },
       ],
+    },
+    googleAnalytics: {
+      trackingID: 'UA-167442440-1',
+      anonymizeIP: true,
     },
     footer: {
       style: 'dark',
