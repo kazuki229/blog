@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{143:function(a){a.exports=JSON.parse('{"i-os":{"allTagsPath":"/tags","slug":"i-os","name":"ios","count":1,"permalink":"/tags/i-os"},"authentication":{"allTagsPath":"/tags","slug":"authentication","name":"authentication","count":1,"permalink":"/tags/authentication"}}')}}]);
