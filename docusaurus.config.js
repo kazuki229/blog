@@ -1,7 +1,7 @@
 module.exports = {
   title: 'kazuki229\'s blog',
   url: 'https://kazuki229.github.io',
-  baseUrl: '/',
+  baseUrl: '/blog/',
   favicon: '/img/logo.png',
   organizationName: 'kazuki229',
   projectName: 'blog',
