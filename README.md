@@ -1,3 +1,4 @@
+![deployment](https://github.com/kazuki229/blog/workflows/deployment/badge.svg)
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
