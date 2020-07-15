@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://github.com/kazuki229/blog/actions?query=workflow%3Adeployment">
+    <img alt="badge" src="https://github.com/kazuki229/blog/workflows/deployment/badge.svg">
+  </a>
+</p>
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
