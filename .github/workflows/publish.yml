@@ -36,3 +36,5 @@ jobs:
           github_token: ${{ secrets.GH_PAGES_DEPLOY }}
           publish_dir: ./public
           publish_branch: gh-pages
+          user_name: 'gh-actions'
+          user_email: 'actions@gihub.com'
