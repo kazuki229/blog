@@ -9,8 +9,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v2
+        
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
-          access-token: ${{ secrets.GH_PAGES_DEPLOY }}
-          deploy-branch: gh-pages
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: Run build for GitHub Pages
+        run: yarn build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAGES_DEPLOY }}
+          publish_dir: ./public
+          publish_branch: gh-pages
