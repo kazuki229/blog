@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-    <channel>
-        <title>kazuki229's blog Blog</title>
-        <link>https://kazuki229.github.io/</link>
-        <description>kazuki229's blog Blog</description>
-        <lastBuildDate>Sat, 23 May 2020 00:00:00 GMT</lastBuildDate>
-        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>https://github.com/jpmonette/feed</generator>
-        <copyright>Copyright © 2020 kazuki229. Built with Docusaurus.</copyright>
-        <item>
-            <title><![CDATA[テスト]]></title>
-            <link>https://kazuki229.github.io/blog/hello-2020</link>
-            <guid>hello-2020</guid>
-            <pubDate>Sat, 23 May 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[テスト]]></description>
-        </item>
-    </channel>
-</rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[kazuki229's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 16 Jul 2020 14:15:01 GMT</lastBuildDate><item><title><![CDATA[初投稿]]></title><description><![CDATA[テストのために書き出しを書いています。 テストの見出し これはテストです。 テスト1 テスト2 テスト3 テスト]]></description><link>https://gatsby-starter-blog-demo.netlify.app/new-beginnings/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/new-beginnings/</guid><pubDate>Sun, 07 Jun 2020 21:37:32 GMT</pubDate><content:encoded>&lt;p&gt;テストのために書き出しを書いています。&lt;/p&gt;
+&lt;h2&gt;テストの見出し&lt;/h2&gt;
+&lt;p&gt;これはテストです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;テスト1&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;テスト2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;テスト3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;テスト&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
