@@ -8,6 +8,7 @@ node_modules
 .docusaurus
 .cache-loader
 .cache/
+public
 
 # Misc
 .DS_Store
