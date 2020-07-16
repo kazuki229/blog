@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/authentication/","result":{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"fields":{"slug":"/second-article/"},"frontmatter":{"title":"認証とセキュリティについて"}}},{"node":{"fields":{"slug":"/new-beginnings/"},"frontmatter":{"title":"初投稿"}}}]}},"pageContext":{"tag":"Authentication"}}}

@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/security/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/second-article/"},"frontmatter":{"title":"認証とセキュリティについて"}}}]}},"pageContext":{"tag":"Security"}}}
