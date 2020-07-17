@@ -29,6 +29,8 @@ jobs:
         
       - name: Run build for GitHub Pages
         run: yarn build
+        env:
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
