@@ -7,6 +7,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const tagTemplate = path.resolve("src/templates/tags.js")
+  const privacyPoliocyTemplate = path.resolve("src/templates/privacy-policy.js")
+
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
@@ -68,6 +70,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         tag: tag.fieldValue,
       },
     })
+  })
+
+  createPage({
+    path: `/privacy-policy`,
+    component: privacyPoliocyTemplate,
   })
 }
 
