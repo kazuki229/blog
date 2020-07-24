@@ -2,6 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import "./layout.css"
+import IconComponent from "../components/icon"
+import Sidebar from "../components/sidebar"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -57,7 +60,20 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <header>{header}</header>
-      <main>{children}</main>
+      <main>
+        <div
+          style={{
+            display: `flex`,
+            justifyContent: `space-between`,
+          }}
+        >
+          <div
+            className="main-posts">
+            {children}
+          </div>
+          <Sidebar></Sidebar>
+        </div>
+      </main>
       <footer>
         <center>
           <a href="./privacy-policy">プライバシーポリシー</a><br></br>

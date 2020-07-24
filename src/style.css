@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+.main-posts {
+    width: 74%;
+}
+
+aside {
+    width: 22%;
+}
+
+.main-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-date {
+    background: #05fa7b;
+    border-radius: 10%;
+    width: 80px;
+    height: 50px;
+    color: #44475a;
+    text-align: center;
+}
+.post-date span {
+    border-top: 1px rgba(68, 71, 90, 1) solid;
+    padding-top: 6px;
+    display: block;
+}
+
+footer {
+    text-align: center;    
+}
