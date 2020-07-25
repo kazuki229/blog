@@ -6,3 +6,21 @@ body {
 a {
     color: #50fa7b;
 }
+
+.contents {
+    display: flex;
+}
+
+.main-posts {
+    min-width: 600px;
+}
+
+/*モバイル版*/
+@media (max-width: 600px) {
+    .contents {
+        display: block;
+    }
+    .main-posts {
+        min-width: 0;
+    }
+}
