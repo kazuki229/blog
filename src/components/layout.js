@@ -4,8 +4,9 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import "./layout.css"
 import Sidebar from "../components/sidebar"
+import logo from "../../content/assets/titlelogo.svg"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
@@ -25,7 +26,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          <img src={logo} alt="kazuki229's Blog" />
         </Link>
       </h1>
     )
@@ -44,7 +45,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          <img src={logo} alt="kazuki229's Blog" />
         </Link>
       </h3>
     )
@@ -76,7 +77,7 @@ const Layout = ({ location, title, children }) => {
       </main>
       <footer>
         <center>
-          <a href="./privacy-policy">プライバシーポリシー</a><br></br>
+          <a href="/privacy-policy">プライバシーポリシー</a><br></br>
           © {new Date().getFullYear()} kazuki229, Built with
         {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

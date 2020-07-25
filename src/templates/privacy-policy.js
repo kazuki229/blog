@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 // Components
 const PrivacyPolicy = () => {
     return (
-        <Layout location="privacy-policy" title="プライバシーポリシー">
+        <Layout location="privacy-policy">
             <SEO title="プライバシーポリシー" />
             <div>
                 <h1>プライバシーポリシー</h1>

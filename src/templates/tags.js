@@ -12,7 +12,7 @@ const Tags = ({ pageContext, data }) => {
     const edges = data.allMarkdownRemark.edges
 
     return (
-        <Layout location={tag} title={tag}>
+        <Layout location={tag}>
             <SEO title="All posts" />
             {edges.map(({ node }) => {
                 return (<ShortPost
