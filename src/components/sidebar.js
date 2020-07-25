@@ -17,23 +17,31 @@ const Sidebar = () => {
         }}
         >
             <TagCloud></TagCloud>
-            <a
-                className="twitter-timeline"
-                data-width="300"
-                data-height="800"
-                data-theme="dark"
-                href="https://twitter.com/kazuki229_dev?ref_src=twsrc%5Etfw"
+            <div
+                style={{
+                    textAlign: `center`,
+                }}
             >
-                Tweets by kazuki229_dev
-            </a>
-            <Helmet>
-                <script
-                    defer="defer"
-                    src="https://platform.twitter.com/widgets.js"
-                    charSet="utf-8"
+                <a
+                    className="twitter-timeline"
+                    data-width="300"
+                    data-height="800"
+                    data-theme="dark"
+                    data-chrome="transparent"
+                    border-color="#f8f8f2"
+                    href="https://twitter.com/kazuki229_dev?ref_src=twsrc%5Etfw"
                 >
-                </script>
-            </Helmet>
+                    Tweets by kazuki229_dev
+            </a>
+                <Helmet>
+                    <script
+                        defer="defer"
+                        src="https://platform.twitter.com/widgets.js"
+                        charSet="utf-8"
+                    >
+                    </script>
+                </Helmet>
+            </div>
         </aside>
     )
 }

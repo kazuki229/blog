@@ -23,6 +23,13 @@ const TagCloud = () => {
                 marginBottom: rhythm(2.5),
             }}
         >
+            <h3
+                style={{
+                    width: `100%`,
+                }}
+            >
+                タグ
+            </h3>
             {data.allMarkdownRemark.group.map(tag =>
                 <div
                     style={{
