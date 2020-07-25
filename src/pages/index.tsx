@@ -6,8 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ShortPost from "../components/shortpost"
 
-import { rhythm } from "../utils/typography"
-
 type Data = {
   site: {
     siteMetadata: {
@@ -22,6 +20,7 @@ type Data = {
           title: string
           date: string
           description: string
+          tags: string[]
         }
         fields: {
           slug: string
@@ -32,11 +31,9 @@ type Data = {
 }
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
-  const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         return (
@@ -45,6 +42,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             title={node.frontmatter.title}
             date={node.frontmatter.date}
             description={node.frontmatter.description}
+            tags={node.frontmatter.tags}
+            key={node.fields.slug}
           />)
       })}
     </Layout>
@@ -71,6 +70,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import TagList from "../components/taglist"
 
-const ShortPost = ({ slug, title, date, description }) => {
+const ShortPost = ({ slug, title, date, description, tags }) => {
     return (
         <article key={slug}>
             <header>
@@ -16,6 +17,7 @@ const ShortPost = ({ slug, title, date, description }) => {
                     </Link>
                 </h3>
                 <small>{date}</small>
+                <TagList tags={tags} />
             </header>
             <section>
                 <p

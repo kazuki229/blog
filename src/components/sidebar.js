@@ -13,6 +13,7 @@ const Sidebar = () => {
     return (
         <aside style={{
             width: "360px",
+            minWidth: "360px",
         }}
         >
             <TagCloud></TagCloud>

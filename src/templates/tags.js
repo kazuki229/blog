@@ -10,16 +10,20 @@ import ShortPost from "../components/shortpost"
 const Tags = ({ pageContext, data }) => {
     const { tag } = pageContext
     const edges = data.allMarkdownRemark.edges
+    console.log(edges)
 
     return (
         <Layout location={tag}>
             <SEO title="All posts" />
+            <h2>{tag}に関連する記事一覧</h2>
             {edges.map(({ node }) => {
                 return (<ShortPost
                     slug={node.fields.slug}
                     title={node.frontmatter.title}
                     date={node.frontmatter.date}
                     description={node.frontmatter.description}
+                    tags={node.frontmatter.tags}
+                    key={node.fields.slug}
                 />)
             })}
         </Layout >
@@ -32,7 +36,6 @@ Tags.propTypes = {
     }),
     data: PropTypes.shape({
         allMarkdownRemark: PropTypes.shape({
-            totalCount: PropTypes.number.isRequired,
             edges: PropTypes.arrayOf(
                 PropTypes.shape({
                     node: PropTypes.shape({
@@ -40,6 +43,9 @@ Tags.propTypes = {
                             title: PropTypes.string.isRequired,
                             date: PropTypes.string.isRequired,
                             description: PropTypes.string.isRequired,
+                            tags: PropTypes.arrayOf(
+                                PropTypes.string.isRequired
+                            ).isRequired
                         }),
                         fields: PropTypes.shape({
                             slug: PropTypes.string.isRequired,
@@ -69,6 +75,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             description
+            tags
           }
         }
       }

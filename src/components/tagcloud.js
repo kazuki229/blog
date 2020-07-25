@@ -27,24 +27,26 @@ const TagCloud = () => {
                 <div
                     style={{
                         alignItems: `center`,
-                        display: `fles`,
+                        display: `flex`,
                         flexWrap: `wrap`,
                         justifyContent: `flex-start`,
-                        padding: `10px`,
+                        padding: `0 4px 0 0`,
                     }}
+                    key={tag.fieldValue}
                 >
                     <a
                         href={`/tags/${kebabCase(tag.fieldValue)}/`}
                         style={{
-                            padding: "10px 0px",
+                            padding: "5px 0px",
                             boxShadow: "none",
+                            textDecoration: "none",
                         }}
                     >
                         <span
                             style={{
                                 background: "#8be9fd",
                                 color: "#44475a",
-                                padding: "10px",
+                                padding: "5px 10px",
                                 borderRadius: "5px 0 0 5px",
                             }}
                         >
@@ -53,7 +55,7 @@ const TagCloud = () => {
                         <span
                             style={{
                                 background: "#44475a",
-                                padding: "10px",
+                                padding: "5px 10px",
                                 borderRadius: "0 5px 5px 0",
                                 color: "#f8f8f2",
                             }}
