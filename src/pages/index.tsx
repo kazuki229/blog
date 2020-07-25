@@ -37,7 +37,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -45,6 +44,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             <header>
               <h3
                 style={{
+                  marginTop: 0,
                   marginBottom: rhythm(1 / 4),
                 }}
               >
