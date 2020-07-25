@@ -7,16 +7,15 @@
 
 import React from "react"
 import { Helmet } from "react-helmet"
+import TagCloud from "../components/tagcloud"
 
 const Sidebar = () => {
     return (
-        <div style={{
-            width: `22%`,
+        <aside style={{
+            width: "360px",
         }}
         >
-            <aside>
-                <p>こちらはサイドバーでやらせていただきます</p>
-            </aside>
+            <TagCloud></TagCloud>
             <a
                 className="twitter-timeline"
                 data-width="300"
@@ -34,7 +33,7 @@ const Sidebar = () => {
                 >
                 </script>
             </Helmet>
-        </div >
+        </aside>
     )
 }
 

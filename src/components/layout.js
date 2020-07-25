@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 import "./layout.css"
-import IconComponent from "../components/icon"
 import Sidebar from "../components/sidebar"
 
 const Layout = ({ location, title, children }) => {
