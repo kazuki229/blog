@@ -20,7 +20,7 @@ const TagCloud = () => {
             style={{
                 display: `flex`,
                 flexWrap: `wrap`,
-                marginBottom: rhythm(2.5),
+                margin: `20px`,
             }}
         >
             <h3
