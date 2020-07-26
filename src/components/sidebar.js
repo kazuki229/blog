@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import { Helmet } from "react-helmet"
 import TagCloud from "../components/tagcloud"
 
 const Sidebar = () => {

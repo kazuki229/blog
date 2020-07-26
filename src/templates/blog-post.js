@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TagList from "../components/taglist"
 import Share from "../components/share"
+import { Helmet } from "react-helmet"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -46,6 +47,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
+        <Helmet>
+          <script>
+            let script = document.createElement("script");
+            let anchor = document.getElementById("inject-comments-for-uterances");
+            script.setAttribute("src", "https://utteranc.es/client.js");
+            script.setAttribute("crossorigin", "anonymous");
+            script.setAttribute("async", true);
+            script.setAttribute("repo", "kazuki229/blog");
+            script.setAttribute("issue-term", "pathname");
+            script.setAttribute("theme", "github-light");
+            anchor.appendChild(script);
+            </script>
+        </Helmet>
+        <div id="inject-comments-for-uterances"></div>
       </article>
 
       <nav>
