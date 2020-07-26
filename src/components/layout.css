@@ -23,4 +23,7 @@ a {
     .main-posts {
         min-width: 0;
     }
+    body {
+        overflow-x: hidden;
+    }
 }
