@@ -19,8 +19,8 @@ const TagList = ({ tags }) => {
                     }}
                     key={tag}
                 >
-                    <a
-                        href={`/tags/${kebabCase(tag)}/`}
+                    <Link
+                        to={`tags/${kebabCase(tag)}`}
                         style={{
                             boxShadow: "none",
                             textDecoration: "none",
@@ -28,7 +28,7 @@ const TagList = ({ tags }) => {
                         }}
                     >
                         {tag}
-                    </a>
+                    </Link>
                 </div>
             )}
         </div>

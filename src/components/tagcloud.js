@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import kebabCase from "lodash/kebabCase"
 
@@ -41,8 +41,8 @@ const TagCloud = () => {
                     }}
                     key={tag.fieldValue}
                 >
-                    <a
-                        href={`/tags/${kebabCase(tag.fieldValue)}/`}
+                    <Link
+                        to={`tags/${kebabCase(tag.fieldValue)}`}
                         style={{
                             padding: "5px 0px",
                             boxShadow: "none",
@@ -69,7 +69,7 @@ const TagCloud = () => {
                         >
                             {tag.totalCount}
                         </span>
-                    </a>
+                    </Link>
                 </div>
             )}
         </div>
