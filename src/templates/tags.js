@@ -10,7 +10,6 @@ import ShortPost from "../components/shortpost"
 const Tags = ({ pageContext, data }) => {
     const { tag } = pageContext
     const edges = data.allMarkdownRemark.edges
-    console.log(edges)
 
     return (
         <Layout location={tag}>

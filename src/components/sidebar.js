@@ -33,14 +33,6 @@ const Sidebar = () => {
                 >
                     Tweets by kazuki229_dev
             </a>
-                <Helmet>
-                    <script
-                        defer="defer"
-                        src="https://platform.twitter.com/widgets.js"
-                        charSet="utf-8"
-                    >
-                    </script>
-                </Helmet>
             </div>
         </aside>
     )

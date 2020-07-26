@@ -9,13 +9,6 @@ const Share = () => {
                 className="twitter-share-button"
                 data-show-count="true"
             ></a>
-            <Helmet>
-                <script
-                    async="async"
-                    src="https://platform.twitter.com/widgets.js"
-                    charset="utf-8">
-                </script>
-            </Helmet>
             <div
                 className="fb-share-button"
                 data-href=
