@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TagList from "../components/taglist"
+import Share from "../components/share"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -37,6 +38,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
           <TagList tags={post.frontmatter.tags} />
+          <Share />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -72,7 +74,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-    </Layout>
+    </Layout >
   )
 }
 

@@ -15,6 +15,22 @@ a {
     min-width: 600px;
 }
 
+.post-social {
+    display: block;
+    padding: 4px;
+    margin-top: 10px;
+    height: 28px;
+}
+
+.fb_iframe_widget > span {
+    vertical-align: baseline !important;
+    margin: 0 4px;
+}
+
+.post-social > * {
+    vertical-align: top;
+}
+
 /*モバイル版*/
 @media (max-width: 960px) {
     .contents {
