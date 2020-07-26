@@ -6,8 +6,8 @@ module.exports = {
             name: `kazuki229`,
             summary: ``,
         },
-        description: `A starter blog demonstrating what Gatsby can do.`,
-        siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+        description: `kazuki229's Blogです。`,
+        siteUrl: `https://kazuki229.github.io/blog`,
         social: {
             twitter: `kazuki229_dev`,
         },

@@ -34,7 +34,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const posts = data.allMarkdownRemark.edges
   return (
     <Layout location={location}>
-      <SEO title="All posts" />
+      <SEO title="kazuki229's Blog" />
       {posts.map(({ node }) => {
         return (
           <ShortPost
