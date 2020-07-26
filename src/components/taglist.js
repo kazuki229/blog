@@ -1,5 +1,6 @@
 import React from "react"
 import kebabCase from "lodash/kebabCase"
+import { Link } from "gatsby"
 
 const TagList = ({ tags }) => {
     return (
