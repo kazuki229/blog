@@ -21,7 +21,7 @@ const TagList = ({ tags }) => {
                     key={tag}
                 >
                     <Link
-                        to={`tags/${kebabCase(tag)}`}
+                        to={`/tags/${kebabCase(tag)}`}
                         style={{
                             boxShadow: "none",
                             textDecoration: "none",

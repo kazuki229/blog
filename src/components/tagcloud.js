@@ -42,7 +42,7 @@ const TagCloud = () => {
                     key={tag.fieldValue}
                 >
                     <Link
-                        to={`tags/${kebabCase(tag.fieldValue)}`}
+                        to={`/tags/${kebabCase(tag.fieldValue)}`}
                         style={{
                             padding: "5px 0px",
                             boxShadow: "none",

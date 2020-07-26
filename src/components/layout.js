@@ -76,7 +76,7 @@ const Layout = ({ location, children }) => {
       </main>
       <footer>
         <center>
-          <Link to="privacy-policy">プライバシーポリシー</Link><br></br>
+          <Link to="/privacy-policy">プライバシーポリシー</Link><br></br>
           © {new Date().getFullYear()} kazuki229, Built with
         {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
