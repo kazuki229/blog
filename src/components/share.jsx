@@ -9,31 +9,20 @@ const Share = () => {
                 className="twitter-share-button"
                 data-show-count="true"
             ></a>
-            <div
-                className="fb-share-button"
-                data-href=
-                "https://kazuki229.github.io/blog"
-                data-layout="button_count"
-                data-size="small"
-            >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkazuki229.github.io%2Fblog&amp;src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    シェア
-                </a>
-            </div>
-            <Helmet>
-                <div id="fb-root"></div>
-                <script
-                    async="async"
-                    defer="defer"
-                    crossorigin="anonymous"
-                    src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&autoLogAppEvents=1&version=v7.0"
-                    nonce="WJmnSGmS">
-                </script>
-            </Helmet>
+            <iframe
+                src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fkazuki229.github.io%2Fblog%2Ftags%2Fauthentication%2F&width=91&layout=button_count&action=like&size=small&share=false&height=20"
+                width="91"
+                height="20"
+                style={{
+                    border: `none`,
+                    overflow: `hidden`,
+                    margin: `0 4px`,
+                }}
+                scrolling="no"
+                frameborder="0"
+                allowTransparency="true"
+                allow="encrypted-media">
+            </iframe>
             <a
                 href="https://b.hatena.ne.jp/entry/"
                 className="hatena-bookmark-button share-button"
